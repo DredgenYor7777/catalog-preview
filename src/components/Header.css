@@ -22,19 +22,13 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
   cursor: pointer;
 }
 
-.logo svg {
-  color: var(--accent-yellow);
-}
-
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: 0.1em;
-  color: var(--text-primary);
+.logo-image {
+  height: 70px;
+  width: 100px;
+  
 }
 
 .nav {
@@ -76,8 +70,8 @@
     padding: 15px 0;
   }
 
-  .logo-text {
-    font-size: 1.2rem;
+  .logo-image {
+    height: 40px;
   }
 
   .nav {
