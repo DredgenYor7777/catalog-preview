@@ -61,16 +61,41 @@
 
 .product-prices {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--border-color);
+}
+
+.price-container {
+  display: flex;
+  gap: 20px;
 }
 
 .price-item {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
 }
 
 .price-label {
@@ -148,5 +173,19 @@
 
   .price-value {
     font-size: 1.3rem;
+  }
+
+  .price-container {
+    gap: 12px;
+  }
+
+  .whatsapp-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .whatsapp-button svg {
+    width: 20px;
+    height: 20px;
   }
 }

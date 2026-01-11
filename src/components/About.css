@@ -1,0 +1,267 @@
+.about-section {
+  background-color: var(--bg-primary);
+  padding: 120px 20px 80px;
+  scroll-margin-top: 80px;
+}
+
+.about-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: var(--accent-yellow);
+}
+
+/* Sobre Nosotros */
+.about-hero {
+  margin-bottom: 100px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+}
+
+.history-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 800px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-yellow);
+  box-shadow: 0 12px 40px rgba(243, 156, 18, 0.2);
+}
+
+.icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: var(--accent-yellow);
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.icon-box svg {
+  color: #000;
+}
+
+.history-card h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+
+.history-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* Misión y Visión */
+.mission-vision {
+  margin-bottom: 100px;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+}
+
+.mv-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 40px;
+  transition: all 0.4s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-yellow);
+  box-shadow: 0 12px 40px rgba(243, 156, 18, 0.2);
+}
+
+.mv-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: var(--accent-yellow);
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.mv-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-yellow);
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+
+.mv-card p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* Nuestros Valores */
+.values-section {
+  margin-bottom: 80px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-yellow);
+}
+
+.value-card.highlight {
+  border-color: var(--accent-yellow);
+  background-color: rgba(243, 156, 18, 0.05);
+}
+
+.value-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  letter-spacing: 0.05em;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Call to Action */
+.about-cta {
+  text-align: center;
+  padding: 60px 30px;
+  background: linear-gradient(135deg, rgba(243, 156, 18, 0.1) 0%, rgba(243, 156, 18, 0.05) 100%);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.about-cta h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 40px;
+  background-color: var(--accent-yellow);
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(243, 156, 18, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .history-card {
+    padding: 35px 25px;
+  }
+
+  .history-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .history-card p {
+    font-size: 1rem;
+  }
+
+  .mv-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .mv-card {
+    padding: 30px 25px;
+  }
+
+  .mv-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-cta h3 {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    padding: 14px 35px;
+    font-size: 1rem;
+  }
+}

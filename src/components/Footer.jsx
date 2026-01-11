@@ -50,7 +50,6 @@ const Footer = () => {
           <ul className="footer-links">
             <li><a href="#catalog">Catálogo</a></li>
             <li><a href="#about">Nosotros</a></li>
-            <li><a href="#shipping">Envíos</a></li>
           </ul>
         </div>
       </div>
