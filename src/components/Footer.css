@@ -8,16 +8,18 @@
 .footer-content {
   max-width: 1400px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .footer-section {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  text-align: center;
 }
 
 .footer-title {
@@ -47,6 +49,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  align-items: center;
 }
 
 .contact-link {
@@ -111,7 +114,7 @@
   }
 
   .footer-content {
-    gap: 30px;
+    gap: 50px;
   }
 
   .footer-title {
