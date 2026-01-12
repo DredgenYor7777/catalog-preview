@@ -1,0 +1,104 @@
+{
+  "header": {
+    "catalog": "Catalog",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "BILLION BOY$",
+    "subtitle": "Discover our exclusive premium streetwear collection"
+  },
+  "catalog": {
+    "title": "CATALOG",
+    "filterAll": "All",
+    "filterClassic": "Classic",
+    "filterPremium": "Premium"
+  },
+  "products": {
+    "product1": {
+      "name": "CLASSIC WHITE T-SHIRT",
+      "description": "100% organic cotton white t-shirt with exclusive design. Perfect for daily use with a modern and comfortable fit."
+    },
+    "product2": {
+      "name": "PREMIUM WHITE T-SHIRT",
+      "description": "Premium white t-shirt with high-quality finishes. Breathable and durable material, ideal for any occasion."
+    },
+    "product3": {
+      "name": "CLASSIC BLACK T-SHIRT",
+      "description": "Minimalist and elegant black t-shirt. Matches with your entire wardrobe. Timeless and versatile design."
+    },
+    "product4": {
+      "name": "PREMIUM BLACK T-SHIRT",
+      "description": "Limited edition black t-shirt with anti-sweat technology. Ideal for any occasion with a superior finish."
+    },
+    "nb1": {
+      "name": "URBAN STYLE T-SHIRT",
+      "description": "Urban and modern design with exclusive graphics. Perfect for a casual and authentic look."
+    },
+    "nb2": {
+      "name": "GRAPHIC EDITION T-SHIRT",
+      "description": "Special edition with high-definition prints. Unique style that stands out anywhere."
+    },
+    "nb3": {
+      "name": "STREETWEAR T-SHIRT",
+      "description": "Streetwear inspiration with eye-catching details. Comfort and style in one garment."
+    },
+    "nb4": {
+      "name": "SIGNATURE SERIES T-SHIRT",
+      "description": "Exclusive series with premium finishes and characteristic brand design. For those seeking the best."
+    },
+    "nb5": {
+      "name": "URBAN CLASSIC T-SHIRT",
+      "description": "Renewed classic with contemporary touches. Guaranteed versatility for your daily routine."
+    },
+    "nb6": {
+      "name": "DELUXE EDITION T-SHIRT",
+      "description": "Deluxe edition with top-quality materials and sophisticated design. Elegance and comfort combined."
+    },
+    "nb7": {
+      "name": "BOLD STYLE T-SHIRT",
+      "description": "Bold style with impactful graphics. Express your personality with confidence."
+    },
+    "nb8": {
+      "name": "ELITE COLLECTION T-SHIRT",
+      "description": "Elite collection with exclusive details and advanced comfort technology. The best of the best."
+    },
+    "nb9": {
+      "name": "ESSENTIAL PLUS T-SHIRT",
+      "description": "Enhanced essential with contemporary design. The perfect base for any outfit."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "historyTitle": "OUR HISTORY",
+    "historyText": "Billionboys was born from the passion to create garments that reflect a leader's classic personality, founded in 2021 by a young dreamer who wanted to leave a mark and art in the world.",
+    "missionVisionTitle": "Mission and Vision",
+    "missionTitle": "OUR MISSION",
+    "missionText": "Create garments of exceptional quality that reflect the authenticity and personality of each customer. We are committed to offering unique designs that combine urban style with comfort, democratizing premium fashion and making it accessible to all those who seek to express their individuality.",
+    "visionTitle": "OUR VISION",
+    "visionText": "To be the reference brand in premium urban fashion, recognized for our constant innovation, commitment to quality and dedication to creating memorable experiences. We aspire to expand our Billion Boys community globally, maintaining our values of authenticity, sustainability and inclusivity.",
+    "valuesTitle": "Our Values",
+    "value1Title": "Commitment",
+    "value1Text": "Original designs that reflect your true personality",
+    "value2Title": "Integrity",
+    "value2Text": "Committed to environmentally responsible practices",
+    "value3Title": "Responsibility",
+    "value3Text": "Fashion for everyone, regardless of size, age or style",
+    "value4Title": "Innovation",
+    "value4Text": "Constantly exploring new trends and techniques",
+    "ctaTitle": "Ready to transform your style?",
+    "ctaButton": "Explore Catalog"
+  },
+  "footer": {
+    "brand": "BILLION BOY$",
+    "tagline": "Exclusive style, premium quality",
+    "contactTitle": "Contact",
+    "location": "Ontario, Toronto, Canada",
+    "copyright": "Billion Boy$. All rights reserved."
+  },
+  "productCard": {
+    "show": "Show",
+    "hide": "Hide",
+    "description": "Description"
+  }
+}

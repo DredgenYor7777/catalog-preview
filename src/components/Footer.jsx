@@ -1,18 +1,20 @@
 import './Footer.css'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation()
   const currentYear = new Date().getFullYear()
 
   return (
     <footer className="footer" id="contact">
       <div className="footer-content">
         <div className="footer-section">
-          <h3 className="footer-title">BILLION BOY$</h3>
-          <p className="footer-text">Estilo exclusivo, calidad premium</p>
+          <h3 className="footer-title">{t('footer.brand')}</h3>
+          <p className="footer-text">{t('footer.tagline')}</p>
         </div>
 
         <div className="footer-section">
-          <h4 className="footer-heading">Contacto</h4>
+          <h4 className="footer-heading">{t('footer.contactTitle')}</h4>
           <div className="contact-info">
             <a href="mailto:billionbyss17@gmail.com" className="contact-link">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -32,7 +34,7 @@ const Footer = () => {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                 <circle cx="12" cy="10" r="3"/>
               </svg>
-              <span>Ontario, Toronto, Canadá</span>
+              <span>{t('footer.location')}</span>
             </div>
             <a href="https://www.instagram.com/billionbyss_?igsh=MTVqNDM3Ym1wbXgzNQ==" target="_blank" rel="noopener noreferrer" className="contact-link">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -47,7 +49,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {currentYear} Billion Boy$. Todos los derechos reservados.</p>
+        <p>&copy; {currentYear} {t('footer.copyright')}</p>
       </div>
     </footer>
   )

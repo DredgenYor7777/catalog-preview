@@ -1,7 +1,9 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import './ProductCard.css'
 
 const ProductCard = ({ product }) => {
+  const { t } = useTranslation()
   const [showDescription, setShowDescription] = useState(false)
 
   return (
@@ -12,7 +14,7 @@ const ProductCard = ({ product }) => {
       </div>
 
       <div className="product-info">
-        <h3 className="product-name">{product.name}</h3>
+        <h3 className="product-name">{t(product.nameKey)}</h3>
 
         <div className="product-prices">
           <div className="price-container">
@@ -42,7 +44,7 @@ const ProductCard = ({ product }) => {
           className="description-toggle"
           onClick={() => setShowDescription(!showDescription)}
         >
-          {showDescription ? 'Ocultar' : 'Ver'} Descripción
+          {showDescription ? t('productCard.hide') : t('productCard.show')} {t('productCard.description')}
           <svg
             width="16"
             height="16"
@@ -61,7 +63,7 @@ const ProductCard = ({ product }) => {
 
         {showDescription && (
           <div className="product-description">
-            <p>{product.description}</p>
+            <p>{t(product.descriptionKey)}</p>
           </div>
         )}
       </div>

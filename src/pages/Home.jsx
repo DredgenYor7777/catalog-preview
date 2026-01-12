@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import ProductCard from '../components/ProductCard'
 
 // Importar imágenes
@@ -17,123 +18,125 @@ import NB8 from '../assets/NB8.jpeg'
 import NB9 from '../assets/NB9.jpeg'
 
 const Home = () => {
+  const { t } = useTranslation()
+
   const products = [
     {
       id: 1,
-      name: 'CAMISETA BLANCA CLASSIC',
+      nameKey: 'products.product1.name',
+      descriptionKey: 'products.product1.description',
       priceMXN: 599.00,
       priceCAD: 35.44,
       image: W1,
-      category: 'Classic',
-      description: 'Camiseta blanca de algodón 100% orgánico con diseño exclusivo. Perfecta para uso diario con un corte moderno y cómodo.'
+      category: 'Classic'
     },
     {
       id: 2,
-      name: 'CAMISETA BLANCA PREMIUM',
+      nameKey: 'products.product2.name',
+      descriptionKey: 'products.product2.description',
       priceMXN: 899.00,
       priceCAD: 49.97,
       image: W2,
-      category: 'Premium',
-      description: 'Camiseta blanca premium con acabados de alta calidad. Material transpirable y resistente, ideal para cualquier ocasión.'
+      category: 'Premium'
     },
     {
       id: 3,
-      name: 'CAMISETA NEGRA CLASSIC',
+      nameKey: 'products.product3.name',
+      descriptionKey: 'products.product3.description',
       priceMXN: 599.00,
       priceCAD: 35.44,
       image: B1,
-      category: 'Classic',
-      description: 'Camiseta negra minimalista y elegante. Combina con todo tu guardarropa. Diseño atemporal y versátil.'
+      category: 'Classic'
     },
     {
       id: 4,
-      name: 'CAMISETA NEGRA PREMIUM',
+      nameKey: 'products.product4.name',
+      descriptionKey: 'products.product4.description',
       priceMXN: 899.00,
       priceCAD: 49.97,
       image: B2,
-      category: 'Premium',
-      description: 'Camiseta negra de edición limitada con tecnología anti-sudor. Ideal para cualquier ocasión con un acabado superior.'
+      category: 'Premium'
     },
     {
       id: 5,
-      name: 'CAMISETA ESTILO URBANO',
+      nameKey: 'products.nb1.name',
+      descriptionKey: 'products.nb1.description',
       priceMXN: 599.00,
       priceCAD: 35.44,
       image: NB1,
-      category: 'Classic',
-      description: 'Diseño urbano y moderno con gráficos exclusivos. Perfecta para un look casual y auténtico.'
+      category: 'Classic'
     },
     {
       id: 6,
-      name: 'CAMISETA GRAPHIC EDITION',
+      nameKey: 'products.nb2.name',
+      descriptionKey: 'products.nb2.description',
       priceMXN: 899.00,
       priceCAD: 49.97,
       image: NB2,
-      category: 'Premium',
-      description: 'Edición especial con estampados de alta definición. Estilo único que destaca en cualquier lugar.'
+      category: 'Premium'
     },
     {
       id: 7,
-      name: 'CAMISETA STREETWEAR',
+      nameKey: 'products.nb3.name',
+      descriptionKey: 'products.nb3.description',
       priceMXN: 599.00,
       priceCAD: 35.44,
       image: NB3,
-      category: 'Classic',
-      description: 'Inspiración streetwear con detalles llamativos. Comodidad y estilo en una sola prenda.'
+      category: 'Classic'
     },
     {
       id: 8,
-      name: 'CAMISETA SIGNATURE SERIES',
+      nameKey: 'products.nb4.name',
+      descriptionKey: 'products.nb4.description',
       priceMXN: 899.00,
       priceCAD: 49.97,
       image: NB4,
-      category: 'Premium',
-      description: 'Serie exclusiva con acabados premium y diseño característico de la marca. Para quienes buscan lo mejor.'
+      category: 'Premium'
     },
     {
       id: 9,
-      name: 'CAMISETA URBAN CLASSIC',
+      nameKey: 'products.nb5.name',
+      descriptionKey: 'products.nb5.description',
       priceMXN: 599.00,
       priceCAD: 35.44,
       image: NB5,
-      category: 'Classic',
-      description: 'Clásico renovado con toques contemporáneos. Versatilidad garantizada para tu día a día.'
+      category: 'Classic'
     },
     {
       id: 10,
-      name: 'CAMISETA DELUXE EDITION',
+      nameKey: 'products.nb6.name',
+      descriptionKey: 'products.nb6.description',
       priceMXN: 899.00,
       priceCAD: 49.97,
       image: NB6,
-      category: 'Premium',
-      description: 'Edición deluxe con materiales de primera calidad y diseño sofisticado. Elegancia y confort combinados.'
+      category: 'Premium'
     },
     {
       id: 11,
-      name: 'CAMISETA BOLD STYLE',
+      nameKey: 'products.nb7.name',
+      descriptionKey: 'products.nb7.description',
       priceMXN: 599.00,
       priceCAD: 35.44,
       image: NB7,
-      category: 'Classic',
-      description: 'Estilo audaz con gráficos impactantes. Expresa tu personalidad con confianza.'
+      category: 'Classic'
     },
     {
       id: 12,
-      name: 'CAMISETA ELITE COLLECTION',
+      nameKey: 'products.nb8.name',
+      descriptionKey: 'products.nb8.description',
       priceMXN: 899.00,
       priceCAD: 49.97,
       image: NB8,
-      category: 'Premium',
-      description: 'Colección élite con detalles exclusivos y tecnología de confort avanzada. Lo mejor de lo mejor.'
+      category: 'Premium'
     },
     {
       id: 13,
-      name: 'CAMISETA ESSENTIAL PLUS',
+      nameKey: 'products.nb9.name',
+      descriptionKey: 'products.nb9.description',
       priceMXN: 599.00,
       priceCAD: 35.44,
       image: NB9,
-      category: 'Classic',
-      description: 'Esencial mejorado con diseño contemporáneo. La base perfecta para cualquier outfit.'
+      category: 'Classic'
     }
   ]
 
@@ -147,32 +150,32 @@ const Home = () => {
     <main className="main-content">
       <section className="hero">
         <div className="hero-content">
-          <h1 className="hero-title">BILLION BOY$</h1>
-          <p className="hero-subtitle">Estilo exclusivo, calidad premium</p>
+          <h1 className="hero-title">{t('hero.title')}</h1>
+          <p className="hero-subtitle">{t('hero.subtitle')}</p>
         </div>
       </section>
 
       <section className="catalog-section" id="catalog">
         <div className="catalog-header">
-          <h2>Nuestro Catálogo</h2>
+          <h2>{t('catalog.title')}</h2>
           <div className="filter-buttons">
             <button
               className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
               onClick={() => setFilter('all')}
             >
-              Todos
+              {t('catalog.filterAll')}
             </button>
             <button
               className={`filter-btn ${filter === 'Classic' ? 'active' : ''}`}
               onClick={() => setFilter('Classic')}
             >
-              Classic
+              {t('catalog.filterClassic')}
             </button>
             <button
               className={`filter-btn ${filter === 'Premium' ? 'active' : ''}`}
               onClick={() => setFilter('Premium')}
             >
-              Premium
+              {t('catalog.filterPremium')}
             </button>
           </div>
         </div>

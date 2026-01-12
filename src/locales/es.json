@@ -1,0 +1,104 @@
+{
+  "header": {
+    "catalog": "Catálogo",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "BILLION BOY$",
+    "subtitle": "Descubre nuestra colección exclusiva de streetwear premium"
+  },
+  "catalog": {
+    "title": "CATÁLOGO",
+    "filterAll": "Todos",
+    "filterClassic": "Classic",
+    "filterPremium": "Premium"
+  },
+  "products": {
+    "product1": {
+      "name": "CAMISETA BLANCA CLASSIC",
+      "description": "Camiseta blanca de algodón 100% orgánico con diseño exclusivo. Perfecta para uso diario con un corte moderno y cómodo."
+    },
+    "product2": {
+      "name": "CAMISETA BLANCA PREMIUM",
+      "description": "Camiseta blanca premium con acabados de alta calidad. Material transpirable y resistente, ideal para cualquier ocasión."
+    },
+    "product3": {
+      "name": "CAMISETA NEGRA CLASSIC",
+      "description": "Camiseta negra minimalista y elegante. Combina con todo tu guardarropa. Diseño atemporal y versátil."
+    },
+    "product4": {
+      "name": "CAMISETA NEGRA PREMIUM",
+      "description": "Camiseta negra de edición limitada con tecnología anti-sudor. Ideal para cualquier ocasión con un acabado superior."
+    },
+    "nb1": {
+      "name": "CAMISETA ESTILO URBANO",
+      "description": "Diseño urbano y moderno con gráficos exclusivos. Perfecta para un look casual y auténtico."
+    },
+    "nb2": {
+      "name": "CAMISETA GRAPHIC EDITION",
+      "description": "Edición especial con estampados de alta definición. Estilo único que destaca en cualquier lugar."
+    },
+    "nb3": {
+      "name": "CAMISETA STREETWEAR",
+      "description": "Inspiración streetwear con detalles llamativos. Comodidad y estilo en una sola prenda."
+    },
+    "nb4": {
+      "name": "CAMISETA SIGNATURE SERIES",
+      "description": "Serie exclusiva con acabados premium y diseño característico de la marca. Para quienes buscan lo mejor."
+    },
+    "nb5": {
+      "name": "CAMISETA URBAN CLASSIC",
+      "description": "Clásico renovado con toques contemporáneos. Versatilidad garantizada para tu día a día."
+    },
+    "nb6": {
+      "name": "CAMISETA DELUXE EDITION",
+      "description": "Edición deluxe con materiales de primera calidad y diseño sofisticado. Elegancia y confort combinados."
+    },
+    "nb7": {
+      "name": "CAMISETA BOLD STYLE",
+      "description": "Estilo audaz con gráficos impactantes. Expresa tu personalidad con confianza."
+    },
+    "nb8": {
+      "name": "CAMISETA ELITE COLLECTION",
+      "description": "Colección élite con detalles exclusivos y tecnología de confort avanzada. Lo mejor de lo mejor."
+    },
+    "nb9": {
+      "name": "CAMISETA ESSENTIAL PLUS",
+      "description": "Esencial mejorado con diseño contemporáneo. La base perfecta para cualquier outfit."
+    }
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "historyTitle": "NUESTRA HISTORIA",
+    "historyText": "Billionboys nació de la Pasión, por crear prendas que reflejen la personalidad clásica de un líder, fundada en 2021, por un joven soñador de dejar huella y arte en el mundo.",
+    "missionVisionTitle": "Misión y Visión",
+    "missionTitle": "NUESTRA MISIÓN",
+    "missionText": "Crear prendas de calidad excepcional que reflejen la autenticidad y personalidad de cada cliente. Nos comprometemos a ofrecer diseños únicos que combinen estilo urbano con confort, democratizando la moda premium y haciéndola accesible para todos aquellos que buscan expresar su individualidad.",
+    "visionTitle": "NUESTRA VISIÓN",
+    "visionText": "Ser la marca de referencia en moda urbana premium, reconocida por nuestra innovación constante, compromiso con la calidad y dedicación a crear experiencias memorables. Aspiramos a expandir nuestra comunidad de Billion Boys a nivel global, manteniendo nuestros valores de autenticidad, sostenibilidad e inclusividad.",
+    "valuesTitle": "Nuestros Valores",
+    "value1Title": "Compromiso",
+    "value1Text": "Diseños originales que reflejan tu verdadera personalidad",
+    "value2Title": "Integridad",
+    "value2Text": "Comprometidos con prácticas responsables con el medio ambiente",
+    "value3Title": "Responsabilidad",
+    "value3Text": "Moda para todos, sin importar talla, edad o estilo",
+    "value4Title": "Innovación",
+    "value4Text": "Constantemente explorando nuevas tendencias y técnicas",
+    "ctaTitle": "¿Listo para transformar tu estilo?",
+    "ctaButton": "Explorar Catálogo"
+  },
+  "footer": {
+    "brand": "BILLION BOY$",
+    "tagline": "Estilo exclusivo, calidad premium",
+    "contactTitle": "Contacto",
+    "location": "Ontario, Toronto, Canadá",
+    "copyright": "Billion Boy$. Todos los derechos reservados."
+  },
+  "productCard": {
+    "show": "Ver",
+    "hide": "Ocultar",
+    "description": "Descripción"
+  }
+}

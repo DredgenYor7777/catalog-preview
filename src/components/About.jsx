@@ -1,13 +1,16 @@
 import './About.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const About = () => {
+  const { t } = useTranslation()
+
   return (
     <section className="about-section" id="about">
       <div className="about-container">
         {/* Sobre Nosotros */}
         <div className="about-hero">
-          <h2 className="section-title">Sobre Nosotros</h2>
+          <h2 className="section-title">{t('about.title')}</h2>
           <div className="about-content">
             <div className="history-card">
               <div className="icon-box">
@@ -16,18 +19,15 @@ const About = () => {
                   <polyline points="9 22 9 12 15 12 15 22"/>
                 </svg>
               </div>
-              <h3>NUESTRA HISTORIA</h3>
-              <p>
-                Billionboys nació de la Pasión, por crear prendas que reflejen la personalidad clásica de un líder,
-                fundada en 2021, por un joven soñador de dejar huella y arte en el mundo.
-              </p>
+              <h3>{t('about.historyTitle')}</h3>
+              <p>{t('about.historyText')}</p>
             </div>
           </div>
         </div>
 
         {/* Misión y Visión */}
         <div className="mission-vision">
-          <h2 className="section-title">Misión y Visión</h2>
+          <h2 className="section-title">{t('about.missionVisionTitle')}</h2>
           <div className="mv-grid">
             <div className="mv-card">
               <div className="mv-icon">
@@ -36,12 +36,8 @@ const About = () => {
                   <polyline points="12 6 12 12 16 14" stroke="black" strokeWidth="2" fill="none"/>
                 </svg>
               </div>
-              <h3>NUESTRA MISIÓN</h3>
-              <p>
-                Crear prendas de calidad excepcional que reflejen la autenticidad y personalidad de cada cliente.
-                Nos comprometemos a ofrecer diseños únicos que combinen estilo urbano con confort, democratizando
-                la moda premium y haciéndola accesible para todos aquellos que buscan expresar su individualidad.
-              </p>
+              <h3>{t('about.missionTitle')}</h3>
+              <p>{t('about.missionText')}</p>
             </div>
 
             <div className="mv-card">
@@ -51,47 +47,42 @@ const About = () => {
                   <circle cx="12" cy="12" r="3" stroke="black" strokeWidth="2" fill="none"/>
                 </svg>
               </div>
-              <h3>NUESTRA VISIÓN</h3>
-              <p>
-                Ser la marca de referencia en moda urbana premium, reconocida por nuestra innovación constante,
-                compromiso con la calidad y dedicación a crear experiencias memorables. Aspiramos a expandir
-                nuestra comunidad de Billion Boys a nivel global, manteniendo nuestros valores de autenticidad,
-                sostenibilidad e inclusividad.
-              </p>
+              <h3>{t('about.visionTitle')}</h3>
+              <p>{t('about.visionText')}</p>
             </div>
           </div>
         </div>
 
         {/* Nuestros Valores */}
         <div className="values-section">
-          <h2 className="section-title">Nuestros Valores</h2>
+          <h2 className="section-title">{t('about.valuesTitle')}</h2>
           <div className="values-grid">
             <div className="value-card">
-              <h4>Compromiso</h4>
-              <p>Diseños originales que reflejan tu verdadera personalidad</p>
+              <h4>{t('about.value1Title')}</h4>
+              <p>{t('about.value1Text')}</p>
             </div>
 
             <div className="value-card highlight">
-              <h4>Integridad</h4>
-              <p>Comprometidos con prácticas responsables con el medio ambiente</p>
+              <h4>{t('about.value2Title')}</h4>
+              <p>{t('about.value2Text')}</p>
             </div>
 
             <div className="value-card">
-              <h4>Responsabilidad</h4>
-              <p>Moda para todos, sin importar talla, edad o estilo</p>
+              <h4>{t('about.value3Title')}</h4>
+              <p>{t('about.value3Text')}</p>
             </div>
 
             <div className="value-card">
-              <h4>Innovación</h4>
-              <p>Constantemente explorando nuevas tendencias y técnicas</p>
+              <h4>{t('about.value4Title')}</h4>
+              <p>{t('about.value4Text')}</p>
             </div>
           </div>
         </div>
 
         {/* Call to Action */}
         <div className="about-cta">
-          <h3>¿Listo para transformar tu estilo?</h3>
-          <Link to="/" className="cta-button">Explorar Catálogo</Link>
+          <h3>{t('about.ctaTitle')}</h3>
+          <Link to="/" className="cta-button">{t('about.ctaButton')}</Link>
         </div>
       </div>
     </section>
